@@ -1,14 +1,14 @@
+import History from '@/components/pages/search';
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Search = () => {
     return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Text>search</Text>
-        </View>
+        <SafeAreaView className='flex-1 w-full'>
+            <History />
+        </SafeAreaView>
     );
 }
-
-const styles = StyleSheet.create({})
 
 export default Search;
