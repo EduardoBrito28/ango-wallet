@@ -6,7 +6,7 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 const CardHome = () => {
     return (
-        <View className='w-full px-5 py-10 flex flex-col gap-5 bg-[#270685]'>
+        <View className='w-full px-5 py-10 flex flex-col gap-5 bg-[#007BFF]'>
 
             <View className='w-full flex flex-row justify-between items-start'>
                 <View className='flex flex-row gap-2 items-center'>
@@ -23,11 +23,11 @@ const CardHome = () => {
                 </View>
             </View>
 
-            <View className='w-full rounded-lg flex justify-center items-center flex-col py-8 px-10 bg-[#42239C]'>
+            <View className='w-full rounded-lg flex justify-center items-center flex-col py-8 px-10 bg-blue-500'>
                 <Text className='text-gray-300'>Saldo na Conta</Text>
                 <View className='flex flex-row w-full mt-5 items-end justify-center'>
-                    <Text className='text-white text-center font-bold text-5xl'>AOA14,235</Text>
-                    <Text className='text-white text-center font-light text-2xl pb-1'>.34</Text>
+                    <Text className='text-white text-center font-bold text-2xl'>AOA14,235</Text>
+                    <Text className='text-white text-center font-light text-xl pb-1'>.34</Text>
                 </View>
                 <View className='w-full flex flex-row justify-between items-center mt-5'>
 

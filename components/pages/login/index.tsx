@@ -18,7 +18,7 @@ export const LoginForm = () => {
           secureTextEntry
         />
   
-        <TouchableOpacity onPress={()=> router.replace("/(drawer)/(tabs)")} className="w-full bg-blue-500 p-3.5 rounded-md items-center">
+        <TouchableOpacity onPress={()=> router.replace("/(drawer)/(tabs)")} className="w-full bg-[#007BFF] p-3.5 rounded-md items-center">
           <Text className="text-white text-base font-bold">Entrar</Text>
         </TouchableOpacity>
 

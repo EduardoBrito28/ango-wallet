@@ -12,22 +12,21 @@ const TabsLayout = () => {
             screenOptions={{
                 headerShown: false,
                 tabBarShowLabel: false,
-                tabBarStyle: styles.tabBar, // Aplica os estilos personalizados
-                tabBarActiveTintColor: '#6F45E9', // Cor do ícone e texto ativo
-                tabBarInactiveTintColor: '#4a4a4e', // Cor do ícone e texto inativo
-                tabBarLabelStyle: styles.tabBarLabel, // Estilo dos textos
+                tabBarStyle: styles.tabBar, 
+                tabBarActiveTintColor: '#007BFF', 
+                tabBarInactiveTintColor: '#4a4a4e',
+                tabBarLabelStyle: styles.tabBarLabel, 
             }}
         >
             <Tabs.Screen
                 name="index"
                 options={{
                     tabBarIcon: ({ color }) => (
-                        <View className={`${color === '#6F45E9' && 'border-t-2 border-[#6F45E9]'}  flex-1 flex justify-center items-center w-full`
+                        <View className={`${color === '#007BFF' && 'border-t-2 border-[#007BFF]'}  flex-1 flex justify-center items-center w-full`
                         }>
-                            <MaterialCommunityIcons name="home-minus" size={35} color={color} />
+                            <MaterialCommunityIcons name="home-minus" size={28} color={color} />
                         </View>
                     ),
-                    tabBarLabel: "Home",
                     tabBarLabelStyle: { fontSize: 16, fontWeight: '600' }
                 }}
             />
@@ -35,8 +34,8 @@ const TabsLayout = () => {
                 name="search/index"
                 options={{
                     tabBarIcon: ({ color }) => (
-                        <View className={`${color === '#6F45E9' && 'border-t-2 border-[#6F45E9]'}  flex-1 flex justify-center items-center w-full`}>
-                            <MaterialCommunityIcons name="file-document-outline" size={35} color={color} />
+                        <View className={`${color === '#007BFF' && 'border-t-2 border-[#007BFF]'}  flex-1 flex justify-center items-center w-full`}>
+                            <MaterialCommunityIcons name="file-document-outline" size={28} color={color} />
                         </View>
                     ),
                     tabBarLabelStyle: { fontSize: 16, fontWeight: '600' }
@@ -46,11 +45,10 @@ const TabsLayout = () => {
                 name="report/index"
                 options={{
                     tabBarIcon: ({ color }) => (
-                        <View className={`${color === '#6F45E9' && 'border-t-2 border-[#6F45E9]'}  flex-1 flex justify-center items-center w-full`}>
-                            <MaterialCommunityIcons name="credit-card-outline" size={35} color={color} />
+                        <View className={`${color === '#007BFF' && 'border-t-2 border-[#007BFF]'}  flex-1 flex justify-center items-center w-full`}>
+                            <MaterialCommunityIcons name="credit-card-outline" size={28} color={color} />
                         </View>
                     ),
-                    tabBarLabel: "Cartões",
                     tabBarLabelStyle: { fontSize: 16, fontWeight: '600' },
                 }}
             />
@@ -58,11 +56,10 @@ const TabsLayout = () => {
                 name="notification/index"
                 options={{
                     tabBarIcon: ({ color }) => (
-                        <View className={`${color === '#6F45E9' && 'border-t-2 border-[#6F45E9]'}  flex-1 flex justify-center items-center w-full`}>
-                            <MaterialCommunityIcons name="wallet-outline" size={35} color={color} />
+                        <View className={`${color === '#007BFF' && 'border-t-2 border-[#007BFF]'}  flex-1 flex justify-center items-center w-full`}>
+                            <MaterialCommunityIcons name="wallet-outline" size={28} color={color} />
                         </View>
                     ),
-                    tabBarLabel: "Mais",
                     tabBarLabelStyle: { fontSize: 16, fontWeight: '600' }
                 }}
             />
@@ -72,14 +69,14 @@ const TabsLayout = () => {
 
 const styles = StyleSheet.create({
     tabBar: {
-        backgroundColor: '#fff', // Fundo da barra de abas
-        borderTopWidth: 1, // Borda superior
-        borderTopColor: '#e0e0e0', // Cor da borda
-        height: 70, // Altura da barra de abas
+        backgroundColor: '#fff', 
+        borderTopWidth: 1, 
+        borderTopColor: '#e0e0e0', 
+        height: 70, 
     },
     tabBarLabel: {
-        fontSize: 12, // Tamanho do texto
-        fontWeight: '600', // Peso da fonte
+        fontSize: 12, 
+        fontWeight: '600', 
     },
 });
 
